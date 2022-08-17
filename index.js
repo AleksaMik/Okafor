@@ -131,7 +131,6 @@ const writeFile = data => {
         if (err) {
             console.log(err);
             return;
-        // when the profile has been created 
         } else {
             console.log("Your team profile has been successfully created! Please check out the index.html")
         }
