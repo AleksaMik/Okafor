@@ -132,7 +132,7 @@ const writeFile = data => {
             console.log(err);
             return;
         } else {
-            console.log("Your team profile has been successfully created! Please check out the index.html")
+            console.log("Your team profile has been created! Please check out the index.html")
         }
     })
 }; 
