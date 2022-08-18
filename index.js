@@ -1,3 +1,4 @@
+// link to page creation
 const generateHTML = require('./src/generateHTML');
 
 // team profiles
@@ -19,16 +20,21 @@ const addManager = () => {
             type: 'input',
             name: 'name',
             message: 'Who is the manager of this team?', 
-        
+            
+        },
+        {
             type: 'input',
             name: 'id',
             message: "Please enter the manager's ID.",
-        
+            
+        },
+        {
             type: 'input',
             name: 'email',
             message: "Please enter the manager's email.",
             
-
+        },
+        {
             type: 'input',
             name: 'officeNumber',
             message: "Please enter the manager's office number",
@@ -62,6 +68,7 @@ const addEmployee = () => {
             type: 'input',
             name: 'name',
             message: "What's the name of the employee?", 
+            
         },
         {
             type: 'input',
@@ -73,14 +80,14 @@ const addEmployee = () => {
             type: 'input',
             name: 'email',
             message: "Please enter the employee's email.",
-            
+        
         },
         {
             type: 'input',
             name: 'github',
             message: "Please enter the employee's github username.",
             when: (input) => input.role === "Engineer",
-            
+        
         },
         {
             type: 'input',
@@ -97,7 +104,7 @@ const addEmployee = () => {
         }
     ])
     .then(employeeData => {
-       
+        // data for employee types 
 
         let { name, id, email, role, github, school, confirmAddEmployee } = employeeData; 
         let employee; 
@@ -125,14 +132,16 @@ const addEmployee = () => {
 };
 
 
+// function to generate HTML page file using file system 
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
-       
+        // if there is an error 
         if (err) {
             console.log(err);
             return;
+        // when the profile has been created 
         } else {
-            console.log("Your team profile has been created! Please check out the index.html")
+            console.log("Your team profile has been successfully created! Please check out the index.html")
         }
     })
 }; 
