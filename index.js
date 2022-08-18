@@ -32,7 +32,7 @@ const addManager = () => {
             type: 'input',
             name: 'officeNumber',
             message: "Please enter the manager's office number",
-            v
+            
         }
     ])
     .then(managerInput => {
