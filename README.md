@@ -27,5 +27,5 @@ Repository has a unique name. Repository follows best practices for file structu
 New simple html file was created. Based on user input program will create index.html file that contains: team roles such as manager, engineer and intern and their relevant information
 
 ## Links
-[Link to the Google Drive](https://drive.google.com/file/d/1XvDQeBOgKP-kSDcx7QTqJqW_wFOF3PsZ/view)
+[Link to the Google Photo](https://photos.google.com/photo/AF1QipPlwD65oEByV9VDhQ6_Udv5WyLhuzXZ4f0g_sA))
  
